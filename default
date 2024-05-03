@@ -63,7 +63,7 @@ TIMEOUT 100
 				INITRD ::netboot/amd64/debian/initrd.gz
 			TEXT HELP
 			Please be careful choosing this option!
-			Internet connected required for Debian.
+			Internet connection required for Debian.
 			(ESC to go back)
 			ENDTEXT
 		MENU END
