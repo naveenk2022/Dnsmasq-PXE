@@ -89,7 +89,18 @@ Edit `/etc/exports`. Use the `exports` file in Github as a template. Export the 
 ```
 sudo exportfs -av
 ```
-# HTTP CONFIG
+
+**NOTE:**
+The `/etc/default/nfs-*` files are ignored by NFS in Ubuntu 22.04. 
+
+Check your ports for NFS via the command:
+
+```
+rpcinfo -p
+```
+
+If the `mountd` service port is not being assigned to the requested port, you might need to edit `/etc/nfs.conf` instead.
+
 For Ubuntu, all you need to do is place the Ubuntu ISO in its respective directory in the web root. For Arch, you must copy the contents of the iso and put it in its respective directory like with NFS.
 <br></br>
 # DNS, DHCP, TFTP CONFIG
